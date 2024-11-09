@@ -3,9 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevonProfessionalPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/721a81044a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Hello Wold</h1>
+<!-------- HEADER SECTION ---------->
+    <div id="header">
+       <div class="container">
+            <nav>
+                <img src="images/THGP_Logo.png" class="logo" alt="THGP Logo">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Game Producer</p>
+                <h1>hi, i'm ben. I am from ashby.</h1>
+            </div>
+       </div>
+    </div>
+<!-------- HEADER SECTION END ---------->
+<!-------- ABOUT SECTION ---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/headshot02.jpg" alt ="Headshot of me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="bio">
+                        I am born and raised in the Bay Area, and I have alwasy had a passion
+                        for game development!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="OpenTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="OpenTab('exp')">Experience</p>
+                        <p class="tab-links" onclick="OpenTab('edu')">Education</p>
+                        <p class="tab-links" onclick="OpenTab('hobbies')">Hobbies</p>
+                    </div>
+                    <!--------SKILLS---------->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Game Development</span><br>Game Systems Engineer</li>
+                            <li><span>Mentoring</span><br>Mentor & train Black youth</li>
+                            <li><span>Public Speaking</span><br>Good at talking to crowds</li>
+                            <li><span>Calisthenics</span><br>Intermediate calisthenics training</li>
+                        </ul>
+                    </div>
+                    <!--------EXPERIENCE---------->
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>XP 1</span><br>THGP</li>
+                            <li><span>XP 2</span><br>Roots</li>
+                            <li><span>XP 3</span><br>ATDP</li>
+                        </ul>
+                    </div>
+                    <!--------EDUCATION---------->
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>EDU 1</span><br>Skyline High Graduate</li>
+                            <li><span>EDU 2</span><br>UCSC</li>
+                        </ul>
+                    </div>
+                    <!--------Hobbies---------->
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Hobby 1</span><br>Cooking</li>
+                            <li><span>Hobby 2</span><br>Calisthenics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------- ABOUT SECTION END ---------->
+<!-------- SERVICES SECTION ---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game Design</h2>
+                <p>Services 1 paragraph</p>
+                <a href="services.html">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Systems Engineer</h2>
+                <p>Services 2 paragraph</p>
+                <a href="services.html">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-bars-progress"></i>
+                <h2>Project Management</h2>
+                <p>Services 3 paragraph</p>
+                <a href="services.html">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2>Game Dev Tutoring</h2>
+                <p>Services 4 paragraph</p>
+                <a href="services.html">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2>Youth Mentorship</h2>
+                <p>Services 5 paragraph</p>
+                <a href="services.html">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------- SERVICES SECTION END ---------->
+<!-------- PORTFOLIO ---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/mywork01.png">
+                <div class="layer">
+                    <h3>Work 1</h3>
+                    <p>Paragraph 1</p>
+                    <a href="#">Link</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mywork.png">
+                <div class="layer">
+                    <h3>Work 2</h3>
+                    <p>Paragraph 2</p>
+                    <a href="#">Link</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mywork3.png" id="work-img">
+                <div class="layer">
+                    <h3>Work 3</h3>
+                    <p>Paragraph 3</p>
+                    <a href="#">Link</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-------- PORTFOLIO END ---------->
+<!-------- CONTACT ---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>Devon@hiddengeniusproject.org </p>
+                <p><i class="fa-solid fa-phone"></i>510.610.810</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/devon-nutting-b695a92b6/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009598574881"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <!--<a href="#" class="btn btn2">Download Cv</a>-->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Devon. Made by Devon Nutting</p>
+    </div>
+    <div>
+    </div>
+</div>
+<!-------- CONTACT END ---------->
+<!-------- SCRIPT SECTION ---------->
+<script>
+    /* Variable - A name and a type of a stored value */
+    /* A variable called tablinks that holds the tags with class 'tab-links' this variable holds 3 total elements */
+    var tabLinks = document.getElementsByClassName("tab-links");
+    /* A variable called tabContent that holds the tags with class 'tab-contents' */
+    var tabContents = document.getElementsByClassName("tab-contents");
+    /* A function called 'OpenTab' with the parameter 'tabName' */
+    function OpenTab(tabName)
+    {
+        /* For each tab link in the variable 'tab-links' (there are 3 of them)*/
+        for (tabLink of tabLinks)
+        {
+            /*remove the class 'active-link' from that tag*/
+            tabLink.classList.remove("active-link");
+        }
+        /* For each tab link in the variable 'tab-links' (there are 3 of them)*/
+        for (tabContent of tabContents)
+        {
+            /*remove the class 'active-tab' from that tag*/
+            tabContent.classList.remove("active-tab");
+        }
+        /*Take the selected tag title, and add the 'active-link'
+        class to it to make its contents appear on the page*/
+        event.currentTarget.classList.add("active-link");
+        /* Select the tag with the id = the tab name, and add the 'active-tab' class to it;
+        this will make the tab contents appear for the selected section*/
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbznh7eAXPjuatU31TQC6jee4A0YU4iTsLwrAgxHzuNBvehlsoq3ITVH4ZD-t5AbgE4Tag/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Form Succesfully Submitted"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<!-------- SCRIPT SECTION END ---------->
 </body>
 </html>
